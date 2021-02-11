@@ -1,0 +1,14 @@
+.article_header
+  .article_header__left
+    = link_to 'Smpleチャンネル','#',class:"article_header__left--logo"
+  .article_header__right
+    .article_header__right--search
+      検索
+    - if user_signed_in?
+      = link_to 'ログアウト', destroy_user_session_path, method: :delete,class:"article_header__right--logout"
+    - else
+      = link_to '新規登録',new_user_registration_path,class:"article_header__right--new"
+      = link_to 'ログイン',new_user_session_path,class:"article_header__right--login"
+
+
+  

@@ -1,0 +1,32 @@
+.article_header{
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  border-bottom:1px solid black;
+  &__left{
+    &--logo{
+      font-size: 20px;
+      text-decoration: none;
+      color: black;
+    }
+  }
+  &__right{
+    display: flex;
+    &--search{
+      padding-right: 10px;
+    }
+    &--new{
+      text-decoration: none;
+      color: black;
+      padding-right: 10px;
+    }
+    &--login{
+      text-decoration: none;
+      color: black;
+    }
+    &--logout{
+      text-decoration: none;
+      color: black;
+    }
+  }
+}
